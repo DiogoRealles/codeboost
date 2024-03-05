@@ -1,0 +1,190 @@
+@use './variables';
+@use './mixins';
+
+.navbar{
+  background: variables.$lead;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .5);
+  padding: 20px 50px;
+  .nav{
+    &__hamburger{
+      color: variables.$light;
+    }
+  }
+  &.fixed-menu{
+    background: variables.$light;
+    .nav{
+      .logo{
+        color: variables.$lead;
+      }
+      &__hamburger{
+        color: variables.$lead;
+      }
+      ul{
+        li{
+          a{
+            color: variables.$lead;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-mobile{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 0;
+  }
+  aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: variables.$light;
+    padding: 30px;
+    transition: all .3s ease-in-out;
+    transform: translate3d(-100%, 0, 0);
+    .logo{
+      color: variables.$dark;
+      margin-bottom: 40px;
+    }
+    ul{
+      li{
+        a{
+          padding: 15px 0;
+          display: block;
+          font-size: 18px;
+          color: variables.$lead;
+        }
+      }
+    }
+  }
+}
+.logo{
+  font-size: 24px;
+  font-weight: 600;
+  color: variables.$light;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__hamburger{
+    font-size: 32px;
+    color: variables.$light;
+    cursor: pointer;
+    display: none;
+    @include mixins.responsive(576px){
+      display: block;
+    }
+  }
+  &__menu{
+    display: flex;
+    position: relative;
+    @include mixins.responsive(576px){
+      display: none;
+    }
+    .dropdown{
+      position: absolute;
+      top: 50px;
+      left: -100px;
+      width: 100%;
+      max-width: 373px;
+      background: variables.$light;
+      border-radius: 8px;
+      padding: 40px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all .3s ease-in-out;
+      box-shadow: 0 4px 20px -10px rgba(6, 32, 5, 0.2);
+      &.active{
+        opacity: 1;
+        pointer-events: all;
+        animation: fadeIn .4s ease-in-out forwards;
+      }
+      &:after{
+        content: '';
+        width: 293px;
+        height: 5px;
+        background: variables.$origamid;
+        border-radius: 12px 12px 0 0;
+        position: absolute;
+        bottom: 0;
+      }
+      .item{
+        &:not(:last-child){
+          margin-bottom: 24px;
+        }
+        strong{
+          font-weight: 600;
+          color: variables.$lead;
+          display: block;
+          margin-bottom: 4px;
+          font-size: 18px;
+          transition: all .3s ease-in-out;
+          cursor: pointer;
+          &:hover, &.active{
+            color: variables.$origamid;
+          }
+        }
+        p{
+          font-size: 14px;
+          color: variables.$ash;
+        }
+      }
+    }
+  }
+  li{
+    padding: 10px;
+    &:not(:first-child){
+      margin-left: 20px;
+    }
+    a{
+      color: variables.$grey;
+      transition: all .3s ease-in-out;
+      &:hover,&.active{
+        color: variables.$light;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.menu-opened{
+  overflow: hidden;
+  .menu-mobile{
+    opacity: 1;
+    pointer-events: all;
+    aside{
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

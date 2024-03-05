@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="./img/favicon.png?v=3" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/hamburgers.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/script.js" defer></script>
+  <title>blog. - Home</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a class="logo" href="./"><img src="./img/logo.svg" alt="Logo"></a>
+      <nav>
+        <ul>
+          <li><a href="post.html" class="item-category"><img src="./img/icon-tecnologia.svg" alt="ìcone Tecnologia" /><span>Tecnologia</span></a></li>
+          <li><a href="post.html" class="item-category"><img src="./img/icon-react.svg" alt="ìcone Tecnologia" /><span>React JS</span></a></li>
+          <li><a href="post.html" class="item-category"><img src="./img/icon-html.svg" alt="ìcone Tecnologia" /><span>HTML & CSS</span></a></li>
+        </ul>
+        <form class="search" action="./">
+          <input type="text" placeholder="Pesquise por artigo ou tema" />
+          <button type="submit"><img src="./img/icon-lupa.svg" alt="ìcone lupa" /></button>
+        </form>
+        <button data-js="btn-mobile" class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </nav>
+    </div>
+    
+    <div class="menu-mobile">
+      <ul>
+        <li><a href="post.html" class="item-category"><img src="./img/icon-tecnologia.svg" alt="ìcone Tecnologia" /><span>Tecnologia</span></a></li>
+        <li><a href="post.html" class="item-category"><img src="./img/icon-react.svg" alt="ìcone Tecnologia" /><span>React JS</span></a></li>
+        <li><a href="post.html" class="item-category"><img src="./img/icon-html.svg" alt="ìcone Tecnologia" /><span>HTML & CSS</span></a></li>
+      </ul>
+      <form class="search" action="./">
+        <input type="text" placeholder="Pesquise por artigo ou tema" />
+        <button type="submit"><img src="./img/icon-lupa.svg" alt="ìcone lupa" /></button>
+      </form>
+    </div>
+  </header>
+  
+  <section class="s-hero-post">
+    <div class="container">
+      <div class="left-container">
+        <div class="title"><span class="category">Tecnologia</span><h2>Em destaque</h2></div>
+
+        <a href="#" class="card-post-lg">
+          <div class="image"><img src="./img/image-post-lg.jpg" alt="Thumb post" /></div>
+          <div class="info">
+            <div class="top-info">
+              <span class="category">Tecnologia</span>
+              <ul>
+                <li><img src="./img/icon-calendar.svg" alt="ìcone calendário" /><span class="posted-on"><time datetime="2022-08-16T00:00:00">16-08-2022</time></span></li>
+                <li><img src="./img/icon-clock.svg" alt="ìcone relógio" /><span>12min. leitura</span></li>
+              </ul>
+            </div>
+            <h3 class="txt-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, quis?</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="right-container">
+        <h4>Mais populares</h4>
+
+        <div class="all">
+          <div class="item-post">
+            <a href="#" class="card-post-xs">
+              <div class="image"><img src="./img/image-post-xs-01.jpg" alt="Thumb post" /></div>
+              <div class="info">
+                <span class="category">Tecnologia</span>
+                <h6 class="txt-white">Lorem ipsum dolor sit amet.</h6>
+                <ul>
+                  <li><span>16, Ago</span></li>
+                  <li><span>12 min. leitura</span></li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="item-post">
+            <a href="#" class="card-post-xs">
+              <div class="image"><img src="./img/image-post-xs-02.jpg" alt="Thumb post" /></div>
+              <div class="info">
+                <span class="category">Tecnologia</span>
+                <h6 class="txt-white">Lorem ipsum dolor sit amet.</h6>
+                <ul>
+                  <li><span>16, Ago</span></li>
+                  <li><span>12 min. leitura</span></li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="item-post">
+            <a href="#" class="card-post-xs">
+              <div class="image"><img src="./img/image-post-xs-03.jpg" alt="Thumb post" /></div>
+              <div class="info">
+                <span class="category">Tecnologia</span>
+                <h6 class="txt-white">Lorem ipsum dolor sit amet.</h6>
+                <ul>
+                  <li><span>16, Ago</span></li>
+                  <li><span>12 min. leitura</span></li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-articles">
+    <div class="container">
+      <div class="top">
+        <h2>Artigos</h2>
+        <p>Lorem ipsum dolor consectetur <img src="./img/icon-rocket.png" alt="Ícone rocket" /></p>
+      </div>
+
+      <div class="all">
+        <a href="#" class="card-post-default">
+          <div class="image"><img src="./img/image-post-default-01.jpg" alt="Thumb post" /></div>
+          <div class="info">
+            <span class="category">Tecnologia</span>
+            <h6 class="txt-white">Realidade</h6>
+            <ul>
+              <li><span>16, Ago</span></li>
+              <li><span>12 min. leitura</span></li>
+            </ul>
+          </div>
+        </a>
+        <a href="#" class="card-post-default">
+          <div class="image"><img src="./img/image-post-default-02.jpg" alt="Thumb post" /></div>
+          <div class="info">
+            <span class="category">Tecnologia</span>
+            <h6 class="txt-white">Realidade</h6>
+            <ul>
+              <li><span>16, Ago</span></li>
+              <li><span>12 min. leitura</span></li>
+            </ul>
+          </div>
+        </a>
+        <a href="#" class="card-post-default">
+          <div class="image"><img src="./img/image-post-default-03.jpg" alt="Thumb post" /></div>
+          <div class="info">
+            <span class="category">Tecnologia</span>
+            <h6 class="txt-white">Realidade</h6>
+            <ul>
+              <li><span>16, Ago</span></li>
+              <li><span>12 min. leitura</span></li>
+            </ul>
+          </div>
+        </a>
+        <a href="#" class="card-post-default">
+          <div class="image"><img src="./img/image-post-default-04.jpg" alt="Thumb post" /></div>
+          <div class="info">
+            <span class="category">Tecnologia</span>
+            <h6 class="txt-white">Realidade</h6>
+            <ul>
+              <li><span>16, Ago</span></li>
+              <li><span>12 min. leitura</span></li>
+            </ul>
+          </div>
+        </a>
+        <a href="#" class="card-post-default">
+          <div class="image"><img src="./img/image-post-default-05.jpg" alt="Thumb post" /></div>
+          <div class="info">
+            <span class="category">Tecnologia</span>
+            <h6 class="txt-white">Realidade</h6>
+            <ul>
+              <li><span>16, Ago</span></li>
+              <li><span>12 min. leitura</span></li>
+            </ul>
+          </div>
+        </a>
+        <a href="#" class="card-post-default">
+          <div class="image"><img src="./img/image-post-default-06.jpg" alt="Thumb post" /></div>
+          <div class="info">
+            <span class="category">Tecnologia</span>
+            <h6 class="txt-white">Realidade</h6>
+            <ul>
+              <li><span>16, Ago</span></li>
+              <li><span>12 min. leitura</span></li>
+            </ul>
+          </div>
+        </a>
+      </div>
+
+      <button class="btn btn-primary">Carregar mais</button>
+    </div>
+  </section>
+
+  <sections class="s-podcast">
+    <div class="container">
+      <div class="top">
+        <h2>Podcasts</h2>
+        <div class="ctrl-slide">
+          <div class="swiper-pagination"></div>
+          <div class="ctrl">
+            <button class="btn btn-prev"><img src="./img/arrow-slide.svg" alt="ìcone seta" /></button>
+            <button class="btn btn-next"><img src="./img/arrow-slide.svg" alt="ìcone seta" /></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-podcast">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="card-podcast">
+              <div class="image"><img src="./img/img-podcast-01.jpg" alt="Thumb post"></div>
+              <div class="info">
+                <div class="time">
+                  <span class="tag-ep">Ep 01</span>
+                  <div class="read">
+                    <img src="./img/icon-timer.svg" alt="Ícone relógio" />
+                    <span>12min</span>
+                  </div>
+                </div>
+                <h6 class="txt-white">Realidade</h6>
+                <div class="play">
+                  <img src="./img/icon-play.svg" alt="Ícone play" />
+                  <span>Vouvir agora</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="card-podcast">
+              <div class="image"><img src="./img/img-podcast-02.jpg" alt="Thumb post"></div>
+              <div class="info">
+                <div class="time">
+                  <span class="tag-ep">Ep 02</span>
+                  <div class="read">
+                    <img src="./img/icon-timer.svg" alt="Ícone relógio" />
+                    <span>12min</span>
+                  </div>
+                </div>
+                <h6 class="txt-white">Realidade</h6>
+                <div class="play">
+                  <img src="./img/icon-play.svg" alt="Ícone play" />
+                  <span>Vouvir agora</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="card-podcast">
+              <div class="image"><img src="./img/img-podcast-03.jpg" alt="Thumb post"></div>
+              <div class="info">
+                <div class="time">
+                  <span class="tag-ep">Ep 03</span>
+                  <div class="read">
+                    <img src="./img/icon-timer.svg" alt="Ícone relógio" />
+                    <span>12min</span>
+                  </div>
+                </div>
+                <h6 class="txt-white">Realidade</h6>
+                <div class="play">
+                  <img src="./img/icon-play.svg" alt="Ícone play" />
+                  <span>Vouvir agora</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="card-podcast">
+              <div class="image"><img src="./img/img-podcast-04.jpg" alt="Thumb post"></div>
+              <div class="info">
+                <div class="time">
+                  <span class="tag-ep">Ep 04</span>
+                  <div class="read">
+                    <img src="./img/icon-timer.svg" alt="Ícone relógio" />
+                    <span>12min</span>
+                  </div>
+                </div>
+                <h6 class="txt-white">Realidade</h6>
+                <div class="play">
+                  <img src="./img/icon-play.svg" alt="Ícone play" />
+                  <span>Vouvir agora</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="card-podcast">
+              <div class="image"><img src="./img/img-podcast-02.jpg" alt="Thumb post"></div>
+              <div class="info">
+                <div class="time">
+                  <span class="tag-ep">Ep 05</span>
+                  <div class="read">
+                    <img src="./img/icon-timer.svg" alt="Ícone relógio" />
+                    <span>12min</span>
+                  </div>
+                </div>
+                <h6 class="txt-white">Realidade</h6>
+                <div class="play">
+                  <img src="./img/icon-play.svg" alt="Ícone play" />
+                  <span>Vouvir agora</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="card-podcast">
+              <div class="image"><img src="./img/img-podcast-03.jpg" alt="Thumb post"></div>
+              <div class="info">
+                <div class="time">
+                  <span class="tag-ep">Ep 06</span>
+                  <div class="read">
+                    <img src="./img/icon-timer.svg" alt="Ícone relógio" />
+                    <span>12min</span>
+                  </div>
+                </div>
+                <h6 class="txt-white">Realidade</h6>
+                <div class="play">
+                  <img src="./img/icon-play.svg" alt="Ícone play" />
+                  <span>Vouvir agora</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sections>
+
+  <section class="s-playlist">
+    <div class="container">
+      <div class="left-container">
+        <img src="./img/icon-playlist.svg" alt="ìcone playlist" />
+        <h6>Algumas Playlist do canal</h6>
+      </div>
+      <div class="right-container">
+        <a href="#" class="item-playlist">
+          <div class="icon">
+            <img src="./img/icon-html-xs.svg" alt="ìcone html" />
+            <img src="./img/icon-css.svg" alt="ìcone css" />
+            <img src="./img/icon-js.svg" alt="ìcone js" />
+          </div>
+          <h5>Desenvolvimento<br /> HTML5 + CSS3 + JS</h5>
+        </a>
+        
+        <a href="#" class="item-playlist">
+          <div class="icon">
+            <img src="./img/icon-wordpress.svg" alt="ìcone wordpress" />
+          </div>
+          <h5>O mundo<br /> da tecnologia</h5>
+        </a>
+        
+        <a href="#" class="item-playlist">
+          <div class="icon">
+            <img src="./img/icon-react-xs.svg" alt="ìcone react" />
+          </div>
+          <h5>Desenvolvimento<br /> React JS</h5>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__left">
+        <strong>CodeBOOST&copy; | 2022</strong>
+        <p>O curso Codeboost foi desenvolvido por William Moreira. As vagas são distribuídas por turmas de forma sazonal. Caso perca alguma oportunidade é só aguardar a próxima turma que normalmente acontece dentro do período de 3 a 4 meses.</p>
+      </div>
+
+      <div class="footer__right">
+        <div class="group">
+          <span>Grupo</span>
+          <img src="./img/logo-boot.svg" alt="Logo Boost" />
+        </div>
+        <button data-js="btnScrollToTop" type="button">
+          <img src="./img/arrow-up.svg" alt="ìcone arrow" />
+        </button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

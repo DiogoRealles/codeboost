@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="shortcut icon" href="./img/favicon.png?v=3" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/hamburgers.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js" defer></script>
+    <title>blog. - Post</title>
+  </head>
+  <header>
+    <div class="container">
+      <a class="logo" href="./"><img src="./img/logo.svg" alt="Logo"></a>
+      <nav>
+        <ul>
+          <li><a href="post.html" class="item-category"><img src="./img/icon-tecnologia.svg" alt="ìcone Tecnologia" /><span>Tecnologia</span></a></li>
+          <li><a href="post.html" class="item-category"><img src="./img/icon-react.svg" alt="ìcone Tecnologia" /><span>React JS</span></a></li>
+          <li><a href="post.html" class="item-category"><img src="./img/icon-html.svg" alt="ìcone Tecnologia" /><span>HTML & CSS</span></a></li>
+        </ul>
+        <form class="search" action="./">
+          <input type="text" placeholder="Pesquise por artigo ou tema" />
+          <button type="submit"><img src="./img/icon-lupa.svg" alt="ìcone lupa" /></button>
+        </form>
+        <button data-js="btn-mobile" class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </nav>
+    </div>
+    
+    <div class="menu-mobile">
+      <ul>
+        <li><a href="post.html" class="item-category"><img src="./img/icon-tecnologia.svg" alt="ìcone Tecnologia" /><span>Tecnologia</span></a></li>
+        <li><a href="post.html" class="item-category"><img src="./img/icon-react.svg" alt="ìcone Tecnologia" /><span>React JS</span></a></li>
+        <li><a href="post.html" class="item-category"><img src="./img/icon-html.svg" alt="ìcone Tecnologia" /><span>HTML & CSS</span></a></li>
+      </ul>
+      <form class="search" action="./">
+        <input type="text" placeholder="Pesquise por artigo ou tema" />
+        <button type="submit"><img src="./img/icon-lupa.svg" alt="ìcone lupa" /></button>
+      </form>
+    </div>
+  </header>
+
+  <section class="s-details-post">
+    <div class="container">
+      <div class="top-details">
+        <ul class="breadcrumbs">
+          <li><a href="#"><img src="./img/icon-home.svg" alt="ìcone home" /></a></li>
+          
+          <li><a href="#">Statups</a></li>
+          
+          <li><span>Title post</span></li>
+        </ul>
+
+        <a href="./" class="btn"><img src="./img/arrow-back.svg" alt="Ícone voltar" />Voltar para home</a>
+      </div>
+
+      <div class="featured-info-post">
+        <div class="image">
+          <img src="./img/image-featured-post.jpg" alt="Imagem post" />
+        </div>
+        <div class="box-info-post">
+          <span class="category">Tecnologia</span>
+          <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, culpa?</h1>
+
+          <ul>
+            <li>
+              <img src="./img/icon-user.svg" alt="Ícone usuário" />
+              <span>Autor</span>
+            </li>
+            <li>
+              <img src="./img/icon-time-purple.svg" alt="ìcone relógio" />
+              <span class="posted-on"><time datetime="2022-08-16T00:00:00">16-08-2022</time></span>
+            </li>
+            <li>
+              <img src="./img/icon-reading.svg" alt="ìcone relógio" />
+              <span>4min. leitura</span>
+            </li>
+          </ul>
+        </div>
+        <div class="info-post-general">
+          <div class="left-content">
+            <h6>Navegue por tópicos</h6>
+            <ul data-js="topics" class="topics">
+              <!-- <li><a class="active" href=""><span>Por que acelar sua startup?</span></a></li>
+              <li><a href=""><span>Sobre o nosso programa de Inovação Aberta</span></a></li>
+              <li><a href=""><span>Como vai funcionar o evento?</span></a></li>
+              <li><a href=""><span>Conclusão</span></a></li> -->
+            </ul>
+            <h6>
+              <img src="./img/icon-share.svg" alt="Ícone compartilhar" />
+              <span>Compartilhar</span>
+            </h6>
+
+            <ul class="socials">
+              <li><a href="#"><img src="./img/icon-facebook.svg" alt="Ícone facebook" /></a></li>
+              <li><a href="#"><img src="./img/icon-twitter.svg" alt="Ícone twitter" /></a></li>
+              <li><a href="#"><img src="./img/icon-linkedin.svg" alt="Ícone linkedin" /></a></li>
+            </ul>
+          </div>
+
+          <div class="right-content">
+            <div class="content-post">
+              <blockquote>
+                <p>A gestora do Vedacit Labs, Rita Gabriela Rezende Oliveira, ao lado dos CEOs e Founders da Prevision, Paula Lunardelli e Francisco Deppermann Fortes, que participaram do segundo ciclo de aceleração do Labs, e do co-founder e diretor da Liga Ventures, Guilherme Massa, promove um bate-papo sobre a jornada de crescimento durante...</p>
+              </blockquote>
+
+              <h2>Por que acelerar sua startup?</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio sunt facere. Necessitatibus cum repellendus, cupiditate voluptas ipsa soluta esse aspernatur ipsam ab ut velit expedita sunt eaque non consectetur.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aliquid?</p>
+
+              <h2>Sobre o nosso programa de Inovação Aberta</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo qui natus dolores nisi adipisci facere! In nemo aut repudiandae, esse alias eveniet, nulla reprehenderit animi quod facere, dolor ad quidem?</p>
+
+              <h2>Como vai funcionar o evento?</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum saepe deserunt dolores esse dolorem, soluta consequatur maxime voluptate, eligendi doloribus facilis, cum voluptatum delectus magnam! Accusantium reiciendis mollitia nihil excepturi?</p>
+              <ul>
+                <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, dolore!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, mollitia?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque.</li>
+              </ul>
+
+              <h2>Conclusão:</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quod vitae veritatis deleniti, perferendis, recusandae ab harum laboriosam, reiciendis tempora tenetur hic aperiam debitis a qui culpa ex impedit porro.</p>
+              <p>Gravação disponível no canal do <a href="#">YouTube</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-similar-posts">
+    <div class="container">
+      <div class="top">
+        <h2>Artigos Semelhantes</h2>
+        <p>Lorem ipsum dolor sit amet. <i>🚀</i></p>
+      </div>
+
+      <div class="all">
+        <a href="#" class="card-post-default">
+          <div class="image"><img src="./img/image-post-default-01.jpg" alt="Thumb post" /></div>
+          <div class="info">
+            <span class="category">Tecnologia</span>
+            <h6 class="txt-white">Realidade</h6>
+            <ul>
+              <li><span>16, Ago</span></li>
+              <li><span>12 min. leitura</span></li>
+            </ul>
+          </div>
+        </a>
+        <a href="#" class="card-post-default">
+          <div class="image"><img src="./img/image-post-default-02.jpg" alt="Thumb post" /></div>
+          <div class="info">
+            <span class="category">Tecnologia</span>
+            <h6 class="txt-white">Realidade</h6>
+            <ul>
+              <li><span>16, Ago</span></li>
+              <li><span>12 min. leitura</span></li>
+            </ul>
+          </div>
+        </a>
+        <a href="#" class="card-post-default">
+          <div class="image"><img src="./img/image-post-default-03.jpg" alt="Thumb post" /></div>
+          <div class="info">
+            <span class="category">Tecnologia</span>
+            <h6 class="txt-white">Realidade</h6>
+            <ul>
+              <li><span>16, Ago</span></li>
+              <li><span>12 min. leitura</span></li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__left">
+        <strong>CodeBOOST&copy; | 2022</strong>
+        <p>O curso Codeboost foi desenvolvido por William Moreira. As vagas são distribuídas por turmas de forma sazonal. Caso perca alguma oportunidade é só aguardar a próxima turma que normalmente acontece dentro do período de 3 a 4 meses.</p>
+      </div>
+
+      <div class="footer__right">
+        <div class="group">
+          <span>Grupo</span>
+          <img src="./img/logo-boot.svg" alt="Logo Boost" />
+        </div>
+        <button data-js="btnScrollToTop" type="button">
+          <img src="./img/arrow-up.svg" alt="ìcone arrow" />
+        </button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

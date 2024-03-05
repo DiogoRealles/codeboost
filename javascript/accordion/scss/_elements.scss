@@ -1,0 +1,18 @@
+@use './variables';
+
+body{
+  background: variables.$origamid;
+}
+h1, h2, h3, h4{
+  line-height: 120%;
+}
+p{
+  line-height: 150%;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: variables.$dark;
+}

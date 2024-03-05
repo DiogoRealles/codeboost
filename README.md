@@ -30,7 +30,7 @@
 
 ## PROJETOS
 
-## Cloudboost / Structboost
+## Wireframeboost / Structboost
 
   <p>
     Projeto para se adaptar com Figma e colocar em prática HTML5 e CSS3. <br />

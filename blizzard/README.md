@@ -63,5 +63,5 @@ git clone git@github.com:DiogoRealles/git
 
 <p><strong>
   
-  [Diogo Realles](https://diogorealles.github.io/) | 2024
+  [Diogo Realles](https://diogorealles.github.io/) | 2025
 </strong></p>

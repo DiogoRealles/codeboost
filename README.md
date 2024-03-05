@@ -38,7 +38,7 @@
   </p>
   <br /> <br />
 
-# Sass: +14hrs
+# Sass: +10hrs
 
 <p>
   Aprofundamento nas tecnologias como CSS flexbox / grid e SASS <br />
@@ -93,7 +93,7 @@
 </p>
 <br /> <br />
 
-# JS: +12hrs
+# JS: +7hrs
 
 <p>
   Curso <b>JS</b> do zero ao avançado. <br />
@@ -116,7 +116,7 @@
 </p>
 <br /> <br />
 
-# React / NextJS + TailwindCSS: +12hrs
+# React / NextJS + TailwindCSS: +14hrs
 
 <p>
   Curso <b>React / NextJS + TailwindCSS</b> do zero ao avançado. <br />

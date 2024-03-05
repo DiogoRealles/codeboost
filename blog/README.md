@@ -60,4 +60,7 @@ git clone git@github.com:DiogoRealles/git
 
 <a href="https://www.linkedin.com/in/diogorealles/"><img src="https://img.shields.io/badge//Diogo Realles-1F2D52?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 
-<p><strong>[Diogo Realles](https://diogorealles.github.io/) | 2024</strong></p>
+<p><strong>
+  
+  [Diogo Realles](https://diogorealles.github.io/) | 2024
+  </strong></p>

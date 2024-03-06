@@ -1,0 +1,82 @@
+@use './variables';
+
+.footer{
+  background: url('../img/bg-img.png');
+  position: relative;
+
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: rgba(10, 10, 10, 0.1);
+  }
+  .container{
+
+    .middle{
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 160px 5px 40px;
+
+      ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        li{
+          a{
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+
+    .bottom{
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px 5px;
+      border-top: 1px solid variables.$grey-100;
+
+      span{
+        color: variables.$light-100;
+        margin-bottom: 0;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.4rem;
+      }
+
+      ul{
+        display: flex;
+        color: variables.$light-100;
+        gap: 1.6rem;
+
+        li{
+          color: variables.$light-100;
+
+          a{
+            color: variables.$light-100;
+            display: block;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 50%;
+            background: variables.$dark-900;
+            text-align: center;
+            transition: all 0.3s;
+            padding: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

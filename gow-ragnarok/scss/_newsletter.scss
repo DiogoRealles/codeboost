@@ -1,0 +1,68 @@
+@use './variables';
+
+.newsletter{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+
+  .container{
+    .wrap{
+      background: variables.$dark-800;
+      padding-block: 4rem;
+      margin-bottom: -85px;
+
+      h2{
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: variables.$light-100;
+        text-align: center;
+        margin-bottom: 2.4rem;
+      }
+
+      .form{
+        background: variables.$dark-900;
+        padding: 1.6rem;
+        border-radius: 100px;
+        display: flex;
+        width: 100%;
+        max-width: 800px;
+        margin-inline: auto;
+        
+        &__control{
+          border: none;
+          outline: none;
+          background: none;
+          padding-inline: 1.6rem;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          max-width: 85%;
+          letter-spacing: 2px;
+          color: variables.$light-100;
+
+          &::placeholder{
+            color: variables.$grey-100;
+            font-size: 1.4rem;
+          }
+        }
+
+        .btn-primary{
+          border: none;
+          outline: none;
+          background: variables.$light-100;
+          padding: 12px 20px;
+          font-size: 16px;
+          font-weight: 500;
+          border-radius: 100px;
+          letter-spacing: 2px;
+          width: 100%;
+          max-width: 350px;
+
+          &:is(:hover, :focus){
+            filter: brightness(.8);
+          }
+        }
+      }
+    }
+  }
+}

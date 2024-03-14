@@ -1,0 +1,11 @@
+@use '../1-bases/mixins';
+@use '../1-bases/colors';
+
+button{
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+button{
+  @include mixins.style-btn(4rem, colors.$yellow, colors.$purple);
+}

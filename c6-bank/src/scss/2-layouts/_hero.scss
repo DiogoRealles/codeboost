@@ -1,0 +1,43 @@
+@use '../1-bases/colors';
+@use '../1-bases/typographys';
+
+.hero{
+  background: url('../img/img-hero.png') no-repeat center;
+  padding-top: 120px;
+
+  .container{
+    padding-block: 120px;
+
+    p:nth-child(n+2){
+      max-width: 365px;
+    }
+
+    p{
+      color: colors.$opacity-01;
+
+      .tag{
+        background: colors.$blue;
+        padding: 4px 16px;
+        display: inline-block;
+        margin-right: 16px;
+        border-radius: 50px;
+        color: colors.$white;
+      }
+    }
+
+    h1{
+      font-family: typographys.$font-title;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 130%;
+      color: colors.$white;
+      margin-top: 34px;
+      margin-bottom: 24px;
+      max-width: 740px;
+    }
+
+    .subtitle{
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@use '../1-bases/colors';
+@use '../1-bases/mixins';
+@use '../1-bases/typography';
+
+.s-hero{
+  background: colors.$purple;
+  margin-top: 11.9rem;
+  padding-top: 3.9rem;
+
+  .container{
+    @include mixins.flex(row, flex-start, space-between);
+
+    .text{
+      width: 100%;
+      max-width: 55rem;
+  
+      h1{
+        font-family: typography.$font-title;
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 120%;
+        color: colors.$white;
+        margin-bottom: 1.6rem;
+      }
+  
+      p{
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: colors.$white;
+        max-width: 48.8rem;
+        margin-bottom: 3.2rem;
+      }
+  
+      button{
+        margin-bottom: 8.6rem;
+        @include mixins.style-btn(5.4rem, colors.$yellow, colors.$purple-dark);
+      }
+  
+      .meet{
+        a{
+          display: flex;
+          align-items: center;
+  
+          .icon{
+            width: 4.2rem;
+            height: 4.2rem;
+            background: colors.$white-1;
+            border-radius: .6rem;
+            @include mixins.flex(row, center, center);
+          }
+  
+          span{
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: colors.$white;
+            margin-left: 1.6rem;
+          }
+        }
+      }
+    }
+  
+    .image{
+      position: relative;
+      top: 3.4rem;
+    }
+  }
+
+  @include mixins.responsive(991px){
+    .container{
+      flex-direction: column;
+
+      .text{
+        max-width: 100%;
+        margin-bottom: 3rem;
+
+        h1{
+          text-align: center;
+        }
+        p{
+          max-width: 100%;
+          text-align: center;
+        }
+
+        button{
+          margin: 0 auto 4rem auto;
+          display: block;
+        }
+        
+        .meet{
+          a{
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+  @include mixins.responsive(600px){
+    padding-top: 2.5rem;
+    margin-top: 8rem;
+
+    .text{
+      h1{
+        font-size: 4rem !important;
+      }
+    }
+
+    .image{
+      left: -.9rem;
+    }
+  }
+}

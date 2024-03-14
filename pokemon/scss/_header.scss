@@ -1,0 +1,66 @@
+@use './mixins';
+@use './variables';
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11.2rem;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+
+  .container{
+    @include mixins.flex(row, center, space-between);
+  }
+
+  p{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    color: variables.$white;
+  }
+
+  @media screen and (max-width: 560px) {
+    height: 8.2rem;
+
+    img{
+      max-width: 12.9rem;
+    }
+  }
+}
+
+.not-found{
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(40px);
+  transition: all .3s ease-in-out;
+  position: relative;
+  display: none;
+
+  &.active{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+    display: block;
+  }
+
+  h2{
+    font-size: 200px;
+  }
+
+  h3{
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .btnNotFound{
+    background: variables.$red-100;
+    color: variables.$white;
+    font-size: 18px;
+    padding: 16px 40px;
+    border-radius: 100px;
+    display: inline-block;
+  }
+}

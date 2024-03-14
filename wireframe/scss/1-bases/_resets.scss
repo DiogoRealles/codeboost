@@ -1,0 +1,30 @@
+@use './colors';
+@use './typography';
+
+:root{
+  font-size: 62.5%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::selection{
+  background: colors.$grey-colors-200;
+  color: colors.$white;
+}
+html{
+  font-size: 1.6rem;
+}
+html,
+body{
+  font-family: typography.$font-body;
+}
+ul, li{
+  list-style: none;
+}
+img{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}

@@ -1,0 +1,43 @@
+@use '../1-bases/colors';
+
+.s-hero{
+  padding-block: 7.2rem;
+  margin-top: 8.8rem;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text{
+      width: 100%;
+      max-width: 64rem;
+
+      h1{
+        margin-bottom: 2rem;
+      }
+
+      p{
+        margin-bottom: 5.6rem;
+        max-width: 48.8rem;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: colors.$grey-colors-300;
+      }
+
+      .btn-primary{
+        padding-block: 1.7rem;
+      }
+    }
+
+    .image{
+      width: 100%;
+      max-width: 48.8rem;
+      height: 49.6rem;
+      background: colors.$grey-colors-800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

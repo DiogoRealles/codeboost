@@ -1,0 +1,118 @@
+@use '../1-bases/colors';
+@use '../1-bases/typographys';
+@use '../3-modules/mixins';
+
+footer{
+  padding-block: 80px;
+
+  .container{
+    .top{
+      @include mixins.flex(row, flex-end, space-between);
+
+      .text{
+        h2{
+          font-family: typographys.$font-title;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 130%;
+          letter-spacing: -0.03em;
+          color: colors.$black-brand;
+        }
+
+        p{
+          font-family: typographys.$font-title;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 28px;
+          line-height: 130%;
+          color: colors.$grey-brand;
+        }
+      }
+
+      .btns{
+        border: 1px solid colors.$grey-01;
+        border-radius: 100px;
+        padding: 8px;
+
+        .btn-outline-white{
+          color: colors.$grey-brand;
+        }
+      }
+    }
+
+    .box{
+      position: relative;
+      background: linear-gradient(98.6deg, colors.$black-01 7.61%, colors.$black-brand 96.26%);
+      border-radius: 12px;
+      @include mixins.flex(row, center, space-between);
+      padding: 80px;
+      margin-top: 90px;
+
+      .text{
+        width: 100%;
+        max-width: 340px;
+
+        h4{
+          font-family: typographys.$font-title;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 130%;
+          letter-spacing: -0.03em;
+          color: colors.$white;
+          margin-bottom: 16px;
+        }
+  
+        p{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: colors.$white;
+          opacity: colors.$opacity-01;
+        }
+  
+        .icon{
+          display: flex;
+          align-items: center;
+          margin-top: 40px;
+  
+          span{
+            background: colors.$white;
+            color: colors.$black-brand;
+            padding: 8px;
+            border-radius: 50%;
+            margin-right: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          p{
+            color: colors.$white;
+          }
+        }
+      }
+
+      .image{
+        img{
+          position: absolute;
+        }
+        .mockup{
+          right: 140px;
+          bottom: 0px;
+        }
+        .card-black{
+          top: -30px;
+          right: 300px;
+          animation: floating 2s ease 1s alternate infinite;
+          filter: drop-shadow(0px 4px 16px rgba(10, 10, 10, .3));
+        }
+        .logo{
+          right: 70px;
+          bottom: 50px;
+          width: 150px;
+        }
+      }
+    }
+  }
+}

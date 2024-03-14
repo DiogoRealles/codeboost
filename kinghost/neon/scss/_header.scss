@@ -1,0 +1,259 @@
+@use './variables';
+@use './mixins';
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8.8rem;
+  display: flex;
+  border-bottom: 2px solid variables.$white-2;
+  z-index: 2022;
+
+  .container{
+    @include mixins.flex(row, center, space-between);
+  }
+
+  &.fixed-menu{
+    background: variables.$white;
+    box-shadow: 0 0 16px 0 rgba(111, 111, 111, 0.5);
+
+    .logo{
+      background: url('../img/logo-neon-color.svg') no-repeat center / cover;
+      max-width: 100%;
+    }
+
+    nav{
+      ul{
+        li{
+          a{
+            color: variables.$grey-400;
+            
+            &:hover{
+              color: variables.$brand-light-blue;
+            }
+          }
+        }
+      }
+
+      .btn-secondary{
+        color: variables.$brand-light-blue;
+        border: 2px solid variables.$brand-light-blue;
+
+        &:hover{
+          background: variables.$brand-light-blue;
+          color: variables.$white;
+        }
+      }
+    }
+  }
+
+  .logo{
+    display: inline-block;
+    width: 132px;
+    height: 30px;
+    background: url('../img/logo.svg') no-repeat center center;
+    background-size: 100%;
+    transition: all .3s ease-in-out;
+  }
+
+  nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .dropdown{
+      position: absolute;
+      top: 49px;
+      left: -130px;
+      width: 100%;
+      max-width: 37.3rem;
+      background: variables.$white;
+      border-radius: 6px;
+      padding: 4rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: all .3s ease-in-out;
+      transform: translateY(20px);
+
+      &.active{
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
+      }
+
+      &::after{
+        content: '';
+        width: 293px;
+        height: 5px;
+        background: variables.$brand-yellow;
+        border-radius: 12px 12px 0 0;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .item{
+        cursor: pointer;
+
+        &:not(:last-child){
+          margin-bottom: 2.8rem;
+        }
+
+        &:hover{
+          strong{
+            color: variables.$brand-blue;
+          }
+        }
+
+        strong{
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 1.9rem;
+          color: variables.$grey-400;
+          display: block;
+          margin-bottom: 4px;
+          transition: all .3s ease-in-out;
+        }
+
+        p{
+          font-size: 1.4rem;
+          line-height: 150%;
+          color: variables.$grey-300;
+        }
+      }
+    }
+
+    ul{
+      display: flex;
+      align-items: center;
+      margin-right: 5.9rem;
+      li{
+        &:not(:first-child){
+          margin-left: 4.8rem;
+        }
+        
+        a{
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 125%;
+          color: variables.$white;
+          transition: color .3s ease-in-out;
+  
+          &:hover{
+            color: variables.$brand-yellow;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-mobile{
+    display: none;
+    margin-left: 4rem;
+  }
+
+  @include mixins.responsive(1085px){
+    nav{
+      ul{
+        margin-right: 3rem;
+
+        li{
+          &:not(:first-child){
+            margin-left: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  @include mixins.responsive(991px){
+    .logo{
+      max-width: 10.8rem;
+    }
+    nav{
+      ul{
+        display: none;
+      }
+
+      .btn-mobile{
+        display: block;
+      }
+    }
+  }
+
+  @include mixins.responsive(480px){
+    height: 7.3rem;
+
+    nav{
+      .btn-secondary{
+        display: none;
+      }
+    }
+  }
+}
+
+.menu-mobile{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2022;
+  transition: all .3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: variables.$black-5;
+    z-index: 0;
+  }
+
+  aside{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: variables.$white;
+    padding: 3rem;
+    transform: translateX(-100%);
+    transition: all .3s ease-in-out;
+
+    .logo{
+      max-width: 15rem;
+      margin-bottom: 4rem;
+    }
+
+    ul{
+      li{
+        a{
+          padding-block: 1.5rem;
+          display: block;
+          font-size: 1.8rem;
+          color: variables.$grey-400;
+        }
+      }
+    }
+  }
+}
+
+.menu-opened{
+  overflow: hidden;
+
+  .menu-mobile{
+    opacity: 1;
+    pointer-events: all;
+
+    aside{
+      transform: translateX(0%);
+    }
+  }
+}

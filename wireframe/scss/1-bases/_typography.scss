@@ -1,0 +1,38 @@
+@use './colors';
+
+$font-title: 'Sora', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+h1, h2, h3{
+  font-family: $font-title;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -1px;
+  color: colors.$white;
+}
+
+h1{
+  font-size: 4.8rem;
+  color: colors.$grey-colors-100;
+}
+
+h2{
+  font-size: 3.2rem;
+}
+
+h3{
+  font-size: 2.4rem;
+}
+
+p{
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+a{
+  font-size: 1.6rem;
+  line-height: 150%;
+  text-decoration: none;
+  color: colors.$grey-colors-200;
+  transition: all .3s ease-in-out;
+}

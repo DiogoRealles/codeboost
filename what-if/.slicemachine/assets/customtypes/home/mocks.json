@@ -1,0 +1,40 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "home",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "subtitle": "experiment",
+    "title": "they",
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Culpa quis cupidatat excepteur aliquip deserunt minim consequat.",
+        "spans": []
+      }
+    ],
+    "label_button": "measure",
+    "url_button": {
+      "link_type": "Web",
+      "url": "http://twitter.com"
+    },
+    "label_trailer": "decide",
+    "thumbnail_video": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
+    },
+    "id_video": "put"
+  }
+}

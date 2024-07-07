@@ -1,0 +1,32 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "character",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "name": "men",
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482"
+    },
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Ad exercitation labore officia tempor nisi proident eiusmod Lorem aliqua do nostrud incididunt occaecat. Magna ullamco cillum ut eu ex excepteur qui.",
+        "spans": []
+      }
+    ]
+  }
+}

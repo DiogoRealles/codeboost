@@ -1,0 +1,23 @@
+@use './variables';
+
+section{
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  text-align: center;
+}
+
+.color-1{
+  background: variables.$success;
+}
+
+.color-2{
+  background: variables.$origamid;
+}
+
+.color-3{
+  background: variables.$light;
+}

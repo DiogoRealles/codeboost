@@ -1,0 +1,60 @@
+.stamp{
+  animation: up 2s linear infinite alternate;
+}
+.bar-01{
+  animation: grow 2s linear 0s infinite alternate;
+}
+.bar-02{
+  animation: grow 2s linear 1.5s infinite alternate;
+}
+.bar-03{
+  animation: grow 2s linear 2s infinite alternate;
+}
+.bar-04{
+  animation: grow 2s linear 2.5s infinite alternate;
+}
+
+.mail{
+  transform-origin: center;
+  animation: popup 1s linear .5s infinite alternate;
+}
+
+.box{
+  animation: up 1.5s linear .5s infinite alternate;
+}
+
+@keyframes up{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(0, 40px, 0);
+  }
+}
+
+@keyframes grow{
+  0%{
+    width: 50px;
+  }
+  100%{
+    width: 100px;
+  }
+}
+
+@keyframes popup{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.05);
+  }
+}
+
+@keyframes box{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

@@ -1,0 +1,86 @@
+@use './variables';
+
+.form{
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  color: variables.$light;
+}
+.form__header{
+  padding: 20px 0;
+}
+.header__title{
+  text-align: center;
+}
+.form-control{
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+.form-control label{
+  display: inline-block;
+  margin-bottom: 5px;
+  color: variables.$dark;
+}
+.form-control input, .form-control textarea{
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border: 1px solid variables.$grey;
+  outline: 1px solid variables.$grey;
+  border-radius: 4px;
+}
+.form-control textarea{
+  resize: none;
+}
+.form-control input:focus,
+.form-control textarea:focus{
+  box-shadow: 0;
+  border: 1px solid variables.$ash;
+}
+.form-control.success input{
+  border: 1px solid variables.$success;
+}
+.form-control.success i.bi-check-circle{
+  visibility: visible;
+  color: variables.$success;
+}
+.form-control.error input{
+  border: 1px solid variables.$error;
+}
+.form-control.error i.bi-exclamation-circle{
+  visibility: visible;
+  color: variables.$error;
+}
+.form-control.error small{
+  visibility: visible;
+  color: variables.$error;
+}
+.form-control i{
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  visibility: hidden;
+}
+.form-control small{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.form .btn{
+  color: variables.$light;
+  background: variables.$success;
+  padding: 16px 24px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  opacity: .8;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.form .btn:hover{
+  opacity: 1;
+}

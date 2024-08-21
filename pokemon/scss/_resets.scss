@@ -1,0 +1,41 @@
+@use './variables';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: variables.$font-body;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background: variables.$white;
+}
+
+button{
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+
+  &[disabled]{
+    cursor: not-allowed;
+  }
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a{
+  text-decoration: none;
+  display: block;
+}
+
+ul{
+  list-style: none;
+}

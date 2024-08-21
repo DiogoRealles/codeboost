@@ -1,0 +1,89 @@
+@use '../1-bases/colors';
+@use '../1-bases/typographys';
+@use '../0-plugins/animation';
+
+.tariffs{
+  
+  .container{
+    position: relative;
+    display: flex;
+    padding-block: 80px;
+
+    .text{
+      width: 100%;
+      max-width: 634px;
+
+
+      h2{
+        font-family: typographys.$font-title;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 130%;
+        letter-spacing: -0.03em;
+        color: colors.$black-brand;
+      }
+
+      p{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 150%;
+        color: colors.$grey-brand;
+      }
+
+      .infos{
+        width: 100%;
+        max-width: 630px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 68px 0;
+        margin-top: 100px;
+
+
+        .box{
+          width: 100%;
+          max-width: 261px;
+
+          .icon{
+            font-size: 24px;
+            color: colors.$black-brand;
+            margin-bottom: 29px;
+
+            &::after{
+              content: '';
+              width: 15px;
+              height: 2px;
+              background: colors.$yellow-brand;
+              display: block;
+            }
+          }
+          
+          .txt{
+            h4{
+              font-family: typographys.$font-title;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 150%;
+              color: colors.$black-brand;
+              margin-bottom: 8px;
+            }
+
+            p{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 150%;
+              color: colors.$grey-brand;
+            }
+          }
+        }
+      }
+    }
+
+    .image{
+      position: absolute;
+      right: 0;
+      top: -60px;
+      animation: floating 2s alternate infinite;
+    }
+  }
+}

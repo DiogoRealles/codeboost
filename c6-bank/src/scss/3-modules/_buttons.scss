@@ -1,0 +1,41 @@
+@use '../1-bases/colors';
+
+.btn{
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+
+  &-yellow{
+    background: colors.$yellow-brand;
+    color: colors.$black-brand;
+
+    &:hover{
+      filter: brightness(.8);
+    }
+  }
+
+  &-dark{
+    background: colors.$black-brand;
+    color: colors.$white;
+
+    &:hover{
+      filter: brightness(.8);
+    }
+  }
+
+  &-outline-white{
+    background: transparent;
+    border: 1px solid colors.$white;
+    color: colors.$white;
+
+    &:hover{
+      background: colors.$white;
+      color: colors.$black-brand;
+    }
+  }
+}

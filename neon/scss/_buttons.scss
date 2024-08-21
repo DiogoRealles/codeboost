@@ -1,0 +1,44 @@
+@use './variables';
+
+.btn-primary,
+.btn-secondary{
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  padding: 0 2.6rem;
+  border-radius: 122px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 4.8rem;
+}
+
+.btn-primary{
+  background: variables.$brand-yellow;
+  color: variables.$brand-yellow-dark;
+  transition: all .3s ease-in-out;
+
+  &:hover{
+    background: variables.$brand-yellow-light;
+  }
+}
+
+.btn-secondary{
+  border: 1px solid variables.$brand-light-blue;
+  background: transparent;
+  color: variables.$brand-light-blue;
+  transition: all .3s ease-in-out;
+
+  &:hover{
+    background: variables.$brand-light-blue;
+    color: variables.$white;
+  }
+
+  &.white{
+    border: 2px solid variables.$white;
+    color: variables.$white;
+
+    &:hover{
+      background: variables.$white;
+      color: variables.$brand-green-light;
+    }
+  }
+}

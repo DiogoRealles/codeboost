@@ -1,0 +1,43 @@
+@use './variables';
+@use './mixins';
+
+footer{
+  width: 100%;
+  background: variables.$blue-primary;
+  padding-top: 6.7rem;
+  padding-bottom: 6.5rem;
+
+  .container{
+    @include mixins.flex(row, center, space-between);
+
+    .text{
+      h3{
+        color: variables.$white;
+      }
+  
+      p{
+        font-weight: 500;
+        font-family: variables.$font-body;
+        font-size: 1.4rem;
+        line-height: 180%;
+        color: variables.$opacity-700;
+      }
+    }
+  }
+
+  @media screen and (max-width:560px){
+    padding-block: 4rem;
+
+    .container{
+      flex-direction: column;
+    }
+
+    .text{
+      margin-bottom: 4.8rem;
+
+      h3, p{
+        text-align: center;
+      }
+    }
+  }
+}

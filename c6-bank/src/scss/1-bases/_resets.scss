@@ -1,0 +1,33 @@
+@use './colors';
+@use './typographys';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: typographys.$font-body;
+}
+
+::selection{
+  background: colors.$black-brand;
+  color: colors.$white;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+
+ul, li{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}

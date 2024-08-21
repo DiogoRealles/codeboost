@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/script.js" defer></script>
+  <title>Practices 01 - Nav Tabs</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <ul class="nav__tabs">
+        <li class="nav__tabItem active"><a data-js="navTabLink" href="" class="nav__tabLink active">Home</a></li>
+        <li class="nav__tabItem"><a data-js="navTabLink" href="" class="nav__tabLink">About</a></li>
+        <li class="nav__tabItem"><a data-js="navTabLink" href="" class="nav__tabLink">Services</a></li>
+        <li class="nav__tabItem"><a data-js="navTabLink" href="" class="nav__tabLink">Projects</a></li>
+        <li class="nav__tabItem"><a data-js="navTabLink" href="" class="nav__tabLink">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="tab">
+      <div data-js="tabPane" class="tab__pane active">
+        <h2 class="tab__title">Home</h2>
+        <p class="tab__text">Content 01...<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eaque quos tempora, doloremque consequatur
+          architecto dolorem accusantium nostrum deleniti temporibus.
+        </p>
+      </div>
+      <div data-js="tabPane" class="tab__pane">
+        <h2 class="tab__title">About me</h2>
+        <p class="tab__text">Content 02...<br>
+          Sou só um cara que é Dev por diversão...
+        </p>
+      </div>
+      <div data-js="tabPane" class="tab__pane">
+        <h2 class="tab__title">My Services</h2>
+        <p class="tab__text">Content 03...<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eaque quos tempora, doloremque consequatur
+          architecto dolorem accusantium nostrum deleniti temporibus.
+        </p>
+      </div>
+      <div data-js="tabPane" class="tab__pane">
+        <h2 class="tab__title">My Projects</h2>
+
+        <div class="flex wrap gap-2">
+          <div class="card">
+            <div class="card__top"><img class="card__img" src="./img/img-01.png" alt="IMG Random"></div>
+            <div class="card__body">
+              <h1 class="card__title">Title Card</h1>
+              <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae hic officiis
+                tenetur expedita alias quasi tempore facere! Non, eveniet! Enim ab ut voluptatum nihil, aut
+                exercitationem similique minus earum debitis!.</p>
+            </div>
+            <a class="card__btn" href="">See More</a>
+          </div>
+
+          <div class="card">
+            <div class="card__top"><img class="card__img" src="./img/img-02.png" alt="IMG Random"></div>
+            <div class="card__body">
+              <h1 class="card__title">Title Card</h1>
+              <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quas, tempore
+                blanditiis ipsa obcaecati quia, fuga quisquam, harum quam distinctio totam rem quaerat. Maxime sapiente
+                aperiam laudantium reiciendis similique tempore alias repellat eum fuga est, nam non nulla veniam.
+                Consequuntur eos soluta incidunt minima quidem repudiandae quibusdam, doloribus reiciendis sint?</p>
+            </div>
+            <a class="card__btn" href="">See More</a>
+          </div>
+        </div>
+      </div>
+      <div data-js="tabPane" class="tab__pane">
+        <h2 class="tab__title">Contact Me</h2>
+
+        <form id="form" class="form" action="./" method="post">
+          <div class="form-control">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" placeholder="Enter your name" />
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" />
+          </div>
+
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea name="" id="message" placeholder="Great Jobs"></textarea>
+          </div>
+
+          <button id="btn" class="btn" type="submit">Submit Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

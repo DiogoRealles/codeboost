@@ -1,0 +1,17 @@
+$font-title: 'Lato', sans-serif;
+$font-body: 'PT Sans', sans-serif;
+
+h1, h2, h3, h4, h5, h6{}
+
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+
+p{
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-family: $font-body;
+}

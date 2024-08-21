@@ -1,0 +1,58 @@
+@use '../1-bases/colors';
+
+header{
+  width: 100%;
+  padding-block: 2.4rem;
+  background: colors.$grey-colors-800;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav{
+      display: flex;
+      align-items: center;
+
+      ul{
+        display: flex;
+        margin-right: 3.2rem;
+      }
+
+      ul li{
+        margin-right: 3.2rem;
+
+        &:last-child{
+          margin-right: 0;
+        }
+        
+        .menu-item{
+          display: inline-block;
+          background: colors.$grey-colors-50;
+          padding: 1.2rem 2.4rem;
+          font-size: 1.5rem;
+          line-height: 105%;
+          letter-spacing: -0.1rem;
+          color: colors.$grey-colors-400;
+
+          &:hover{
+            background: colors.$grey-colors-500;
+            color: colors.$white;
+          }
+        }
+      }
+
+      .btn-primary{
+        padding-block: .8rem;
+      }
+    }
+    
+    .menu-mobile{
+      display: none;
+    }
+  }
+}

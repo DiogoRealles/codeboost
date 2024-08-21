@@ -1,0 +1,60 @@
+@use './variables';
+.nav{
+  display: inline-block;
+  &__tabs{
+    display: flex;
+    background: variables.$light;
+    border-radius: 8px 8px 0 0;
+  }
+  &__tabItem{
+    // padding: 8px;
+    &:not(:first-child){
+      margin-left: 10px;
+    }
+  }
+  &__tabLink{
+    font-weight: bold;
+    padding: 16px 32px;
+    display: inline-block;
+    &.active{
+      border-bottom: 2px solid variables.$origamid;
+    }
+    &.active{
+      color: variables.$origamid;
+    }
+  }
+}
+.tab{
+  padding: 20px;
+  border-radius: 0 8px 8px 8px;
+  background: variables.$light;
+  &__pane{
+    display: none;
+    &.active{
+      display: block;
+      animation: fadeIn .5s ease-in-out forwards;
+    }
+  }
+  &__title{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 0 5px 10px;
+    border-left: 4px solid variables.$origamid;
+  }
+  &__text{
+    color: rgba(0,0, 0, .8);
+    margin-top: 20px;
+    padding: 10px 0 40px 0;
+    border-top: 1px solid rgba(0,0, 0, .2);
+  }
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    transform: translate3d(20px, 0, 0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

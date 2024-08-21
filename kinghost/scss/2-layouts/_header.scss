@@ -1,0 +1,66 @@
+@use '../1-bases/colors';
+@use '../1-bases/mixins';
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11.9rem;
+  background: colors.$purple;
+  display: flex;
+  z-index: 2;
+
+  .container{
+    @include mixins.flex(row, center, space-between);
+
+    nav{
+      ul{
+        display: flex;
+        align-items: center;
+  
+        li{
+          &:not(:first-child){
+            margin-left: 2.4rem;
+          }
+  
+          a{
+            display: flex;
+            align-items: center;
+  
+            span{
+              font-size: 1.6rem;
+              margin-left: 1rem;
+              line-height: 150%;
+              color: colors.$white;
+              opacity: .8;
+              transition: all .3s ease-in-out;
+
+              &:hover{
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include mixins.responsive(600px){
+    .container{
+      justify-content: center;
+      
+      nav{
+        display: none;
+      }
+    }
+  }
+
+  @include mixins.responsive(480px){
+    height: 8rem;
+
+    .logo{
+      max-width: 14rem;
+    }
+  }
+}

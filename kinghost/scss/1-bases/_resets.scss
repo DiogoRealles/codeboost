@@ -1,0 +1,48 @@
+@use './colors';
+@use './typography';
+@use './mixins';
+
+:root{
+  font-size: 62.5%;
+
+  @include mixins.responsive(1280px){
+    font-size: 55%;
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+::selection{
+  background: colors.$purple;
+  color: colors.$white;
+}
+
+html{
+  font-size: 1.6rem;
+  scroll-behavior: smooth;
+}
+
+html,
+body{
+  font-family: typography.$font-body;
+}
+
+a{
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+ul, li{
+  list-style: none;
+}
+
+img, svg{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}

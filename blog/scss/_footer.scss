@@ -1,0 +1,127 @@
+@use './variables';
+@use './mixins';
+
+.footer{
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 6.3rem;
+
+  &::before{
+    content: '';
+    width: 100%;
+    max-width: 121.6rem;
+    height: 2px;
+    background: url('../img/line-footer.svg') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -60.8rem;
+  }
+  
+  .container{
+    @include mixins.flex(row, flex-start, space-between);
+  }
+    
+  &__left{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    max-width: 82.9rem;
+
+    strong{
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 150%;
+      color: variables.$white;
+    }
+
+    p{
+      flex: 1;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 150%;
+      color: variables.$opacity-02;
+      margin-left: 8.4rem;
+    }
+  }
+   
+  &__right{
+    display: flex;
+    align-items: center;
+    .group{
+      display: flex;
+      align-items: center;
+      margin-right: 7.1rem;
+
+      span{
+        color: variables.$white;
+        font-size: 1.6rem;
+        margin-right: 1.6rem;
+      }
+    }
+
+    button{
+      width: 3.7rem;
+      height: 3.7rem;
+      border: 2px solid variables.$opacity-02;
+      border-radius: 50%;
+      @include mixins.flex(row, center, center);
+      transition: all .3s ease-in-out;
+
+      &:hover{
+        filter: brightness(.5);
+      }
+    }
+  }
+
+  @media screen and(max-width: 1150px) {
+    padding-block: 6rem;
+  }
+
+  @media screen and(max-width: 991px) {
+    &__left{
+      p{
+        margin-left: 3rem;
+        max-width: 70%;
+      }
+    }
+  }
+
+  @media screen and(max-width: 768px) {
+    .container{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &::before{
+      left: 0;
+      margin-left: 0;
+      background-size: cover;
+    }
+
+    &__left{
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4rem;
+
+      p{
+        max-width: 90%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  @media screen and(max-width: 560px) {
+    padding-block: 4rem;
+
+    &__left{
+      p{
+        max-width: 100%;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "home",
+  "label": "Page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "id",
+          "placeholder": ""
+        }
+      },
+      "subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "Subtitle",
+          "placeholder": ""
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "label_button": {
+        "type": "Text",
+        "config": {
+          "label": "Label button",
+          "placeholder": ""
+        }
+      },
+      "url_button": {
+        "type": "Link",
+        "config": {
+          "label": "Url button",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "label_trailer": {
+        "type": "Text",
+        "config": {
+          "label": "Label trailer",
+          "placeholder": ""
+        }
+      },
+      "thumbnail_video": {
+        "type": "Image",
+        "config": {
+          "label": "Thumbnail video",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "id_video": {
+        "type": "Text",
+        "config": {
+          "label": "Id video",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}
